@@ -234,17 +234,16 @@ console.log(`Giorni passati: ${data(d)}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log("----Extra 11----");
 const matrice = function (x, y) {
   let var1 = [];
   let a = 0;
   for (let i = 0; i < x; i++) {
     var1[i] = [];
     for (let k = 0; k < y; k++) {
-      a = i;
-      a.toString();
-      a += k;
-      var1[i][k] = i;
+      a = i.toString();
+      a = a + k.toString();
+      var1[i][k] = a;
     }
   }
   return var1;
