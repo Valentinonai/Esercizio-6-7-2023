@@ -50,15 +50,15 @@ if (v1 === v2) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("----Erecizio 3 D4----");
 const crazyDiff = function (v1) {
+  const tot = Math.abs(v1 - 19);
   if (v1 > 19) {
-    const ris = (v1 - 19) * 3;
+    const ris = tot * 3;
     return ris;
   } else {
-    const ris = (v1 - 19) * -1;
-    return ris;
+    return tot;
   }
 };
-const a = 20;
+const a = -20;
 if (a > 19) {
   console.log(`Differenza assoluta moltiplicata per tre è: ${crazyDiff(a)}`);
 } else {
